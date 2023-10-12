@@ -11,8 +11,8 @@ class Solution:
         
         while low <= high:
             mid = low + (high - low) // 2
-            
             res = guess(mid)
+            
             if res == 0:
                 return mid
             elif res < 0:
@@ -21,5 +21,3 @@ class Solution:
                 low = mid + 1
                 
         return -1
-            
-            
